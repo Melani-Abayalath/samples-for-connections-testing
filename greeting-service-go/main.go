@@ -65,11 +65,11 @@ func main() {
 
 func greet(w http.ResponseWriter, r *http.Request) {
 	// Read environment variables
-	host := os.Getenv("SVC_URL")
-	port := os.Getenv("TOKEN_URL")
-	username := os.Getenv("CONSUMER_SECRET")
-	password := os.Getenv("CONSUMER_KEY")
-	database := os.Getenv("CONSUMER_KEY")
+	host := os.Getenv("HOST_NAME")
+	port := os.Getenv("PORT")
+	username := os.Getenv("USERNAME")
+	password := os.Getenv("PASSWORD")
+	database := os.Getenv("DATABASE_NAME")
 	
 
 
