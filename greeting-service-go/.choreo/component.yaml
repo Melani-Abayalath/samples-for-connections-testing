@@ -44,3 +44,7 @@ dependencies:
         to: PASSWORD
       - from: DatabaseName
         to: DATABASE_NAME
+    
+    connectionReferences:
+    - name: frgrghr
+      resourceRef: database:testDB/dev
