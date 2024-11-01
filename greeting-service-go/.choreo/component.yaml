@@ -32,7 +32,7 @@ endpoints:
 dependencies:
     serviceReferences:
     - name: database:dev
-      connectionConfig: 01ef981a-ce54-1a48-8ac7-16e59ed563e1
+      connectionConfig: 01ef9823-25f7-10e6-836d-7610efab67a3
       env: 
       - from: HostName
         to: HOST_NAME
