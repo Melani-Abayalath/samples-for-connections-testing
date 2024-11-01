@@ -31,20 +31,14 @@ endpoints:
 
 dependencies:
     serviceReferences:
-    - name: database:RedisCache
-      connectionConfig: 01ef9824-ab2e-1f28-9f07-4c3dbe7fee89
+    - name: thirdparty:Petstore Service/v1
+      connectionConfig: 01ef9825-e4b4-12d8-9eb6-5986f8d04e11
       env: 
-      - from: HostName
-        to: HOST_NAME
-      - from: Port
-        to: PORT
-      - from: Username
-        to: USERNAME
-      - from: Password
-        to: PASSWORD
-      - from: DatabaseName
-        to: DATABASE_NAME
+      - from: APIKey
+        to: API_KEY
+      - from: ServiceURL
+        to: SERVICE_URL
     
     connectionReferences:
-    - name: tesrt1
-      resourceRef: database:RedisCache
+    - name: tsett
+      resourceRef: thirdparty:Petstore Service/v1
