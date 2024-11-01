@@ -32,7 +32,7 @@ endpoints:
 dependencies:
     serviceReferences:
     - name: database:RedisCache
-      connectionConfig: 01ef9823-d960-1028-a34b-cc25a00a2c17
+      connectionConfig: 01ef9824-ab2e-1f28-9f07-4c3dbe7fee89
       env: 
       - from: HostName
         to: HOST_NAME
@@ -46,5 +46,5 @@ dependencies:
         to: DATABASE_NAME
     
     connectionReferences:
-    - name: Tesrt
+    - name: tesrt1
       resourceRef: database:RedisCache
