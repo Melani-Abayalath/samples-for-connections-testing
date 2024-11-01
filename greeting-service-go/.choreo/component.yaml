@@ -39,6 +39,6 @@ dependencies:
       - from: ServiceURL
         to: SERVICE_URL
 
-    connectionReferences:
+  connectionReferences:
     - name: tsett
       resourceRef: thirdparty:PetstoreService/v1
