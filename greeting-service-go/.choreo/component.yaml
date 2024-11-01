@@ -31,8 +31,8 @@ endpoints:
 
 dependencies:
     serviceReferences:
-    - name: database:dev
-      connectionConfig: 01ef9823-25f7-10e6-836d-7610efab67a3
+    - name: database:RedisCache
+      connectionConfig: 01ef9823-d960-1028-a34b-cc25a00a2c17
       env: 
       - from: HostName
         to: HOST_NAME
@@ -46,5 +46,5 @@ dependencies:
         to: DATABASE_NAME
     
     connectionReferences:
-    - name: frgrghr
-      resourceRef: database:testDB/dev
+    - name: Tesrt
+      resourceRef: database:RedisCache
