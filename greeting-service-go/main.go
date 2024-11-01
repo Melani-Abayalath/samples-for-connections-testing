@@ -65,30 +65,21 @@ func main() {
 
 func greet(w http.ResponseWriter, r *http.Request) {
 	// Read environment variables
-	host := os.Getenv("HOST_NAME")
-	port := os.Getenv("PORT")
-	username := os.Getenv("USERNAME")
-	password := os.Getenv("PASSWORD")
-	database := os.Getenv("DATABASE_NAME")
+	apiKey := os.Getenv("API_KEY")
+	svcURL := os.Getenv("SERVICE_URL")
+
 	
-	host1 := os.Getenv("CHOREO_TESRT1_HOSTNAME")
-	port1 := os.Getenv("CHOREO_TESRT1_PORT")
-	username1 := os.Getenv("CHOREO_TESRT1_USERNAME")
-	password1 := os.Getenv("CHOREO_TESRT1_PASSWORD")
-	database1 := os.Getenv("CHOREO_TESRT1_DATABASENAME")
+	apiKey1 := os.Getenv("CHOREO_TSETT_APIKEY")
+	svcURL1 := os.Getenv("CHOREO_TSETT_SERVICEURL")
+	
 
 	// Prepare a JSON response with the environment variables
 	envVars := map[string]string{
-		"host":         host,
-		"port":       port,
-		"username": username,
-		"password":    password,
-		"database":    database,
-		"host1":         host1,
-		"port1":       port1,
-		"username1": username1,
-		"password1":    password1,
-		"database1":    database1,
+		"apiKey":         apiKey,
+		"svcURL":       svcURL,
+		"apiKey1": apiKey1,
+		"svcURL1":    svcURL1,
+		
 
 	}
 
