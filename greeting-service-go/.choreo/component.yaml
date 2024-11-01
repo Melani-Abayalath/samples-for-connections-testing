@@ -43,4 +43,4 @@ dependencies:
       - from: Password
         to: PASSWORD
       - from: DatabaseName
-        to: DATABASENAME
+        to: DATABASE_NAME
