@@ -71,11 +71,11 @@ func greet(w http.ResponseWriter, r *http.Request) {
 	password := os.Getenv("PASSWORD")
 	database := os.Getenv("DATABASE_NAME")
 	
-	host1 := os.Getenv("CHOREO_TESRT_HOSTNAME")
-	port1 := os.Getenv("CHOREO_TESRT_PORT")
-	username1 := os.Getenv("CHOREO_TESRT_USERNAME")
-	password1 := os.Getenv("CHOREO_TESRT_PASSWORD")
-	database1 := os.Getenv("CHOREO_TESRT_DATABASENAME")
+	host1 := os.Getenv("CHOREO_TESRT1_HOSTNAME")
+	port1 := os.Getenv("CHOREO_TESRT1_PORT")
+	username1 := os.Getenv("CHOREO_TESRT1_USERNAME")
+	password1 := os.Getenv("CHOREO_TESRT1_PASSWORD")
+	database1 := os.Getenv("CHOREO_TESRT1_DATABASENAME")
 
 	// Prepare a JSON response with the environment variables
 	envVars := map[string]string{
