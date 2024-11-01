@@ -66,10 +66,10 @@ func main() {
 
 func greet(w http.ResponseWriter, r *http.Request) {
 	// Read environment variables
-	serviceURL := os.Getenv("SVC_URL")+"/greeting"
-	tokenURL := os.Getenv("TOKEN_URL")
-	clientSecret := os.Getenv("CONSUMER_SECRET")
-	clientID := os.Getenv("CONSUMER_KEY")
+	serviceURL := os.Getenv("CHOREO_TEYSYD_SERVICEURL")+"/greeting"
+	tokenURL := os.Getenv("CHOREO_TEYSYD_TOKENURL")
+	clientSecret := os.Getenv("CHOREO_TEYSYD_CONSUMERSECRET")
+	clientID := os.Getenv("CHOREO_TEYSYD_CONSUMERKEY")
 	
 	// Log the client ID for debugging
 	fmt.Printf("Client ID: %s\n", clientID)
