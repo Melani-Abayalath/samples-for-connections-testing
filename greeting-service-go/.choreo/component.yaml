@@ -31,14 +31,16 @@ endpoints:
 
 dependencies:
     serviceReferences:
-    - name: choreo:///apifirst/eyer/testpublishernew/8b1c3/v1/PUBLIC
-      connectionConfig: 01ef980e-de66-1876-a357-e565a28f8d81
-      env:
-      - from: ServiceURL
-        to: SVC_URL
-      - from: ConsumerKey
-        to: CONSUMER_KEY
-      - from: ConsumerSecret
-        to: CONSUMER_SECRET
-      - from: TokenURL
-        to: TOKEN_URL
+    - name: database:dev
+      connectionConfig: 01ef981a-ce54-1a48-8ac7-16e59ed563e1
+      env: 
+      - from: HostName
+        to: HOST_NAME
+      - from: Port
+        to: PORT
+      - from: Username
+        to: USERNAME
+      - from: Password
+        to: PASSWORD
+      - from: DatabaseName
+        to: DATABASENAME
