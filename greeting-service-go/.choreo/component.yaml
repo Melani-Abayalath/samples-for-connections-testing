@@ -31,8 +31,8 @@ endpoints:
 
 dependencies:
     serviceReferences:
-    - name: choreo:///apifirst/eyer/testpublishernew/8b1c3/v1/PUBLIC
-      connectionConfig: 01ef980e-de66-1876-a357-e565a28f8d81
+    - name: choreo:///hansijk/databaseconnectionsdemo/testpublishernew/8b1c3/v1/PUBLIC
+      connectionConfig: 01ef9812-a530-1166-94a2-e4182fd6a65a
       env:
       - from: ServiceURL
         to: SVC_URL
