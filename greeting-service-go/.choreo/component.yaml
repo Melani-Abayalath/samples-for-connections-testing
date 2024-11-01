@@ -30,15 +30,6 @@ endpoints:
     schemaFilePath: openapi.yaml
 
 dependencies:
-    serviceReferences:
-    - name: choreo:///apifirst/eyer/testpublishernew/8b1c3/v1/PUBLIC
-      connectionConfig: 01ef980e-de66-1876-a357-e565a28f8d81
-      env:
-      - from: ServiceURL
-        to: SVC_URL
-      - from: ConsumerKey
-        to: CONSUMER_KEY
-      - from: ConsumerSecret
-        to: CONSUMER_SECRET
-      - from: TokenURL
-        to: TOKEN_URL
+    connectionReferences:
+    - name: Teysyd
+      resourceRef: service:/eyer/testpublishernew/v1/8b1c3/PUBLIC
