@@ -30,6 +30,15 @@ endpoints:
     schemaFilePath: openapi.yaml
 
 dependencies:
+   serviceReferences:
+    - name: thirdparty:PetstoreService/v1
+      connectionConfig: 01ef9826-ee8a-160e-ae4f-517a3dc4bf6f
+      env:
+      - from: APIKey
+        to: API_KEY
+      - from: ServiceURL
+        to: SERVICE_URL
+
     connectionReferences:
     - name: tsett
-      resourceRef: thirdparty:Petstore Service/v1
+      resourceRef: thirdparty:PetstoreService/v1
