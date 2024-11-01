@@ -32,7 +32,7 @@ endpoints:
 dependencies:
     serviceReferences:
     - name: thirdparty:Petstore Service/v1
-      connectionConfig: 01ef9825-e4b4-12d8-9eb6-5986f8d04e11
+      connectionConfig: 01ef9826-ee8a-160e-ae4f-517a3dc4bf6f
       env: 
       - from: APIKey
         to: API_KEY
