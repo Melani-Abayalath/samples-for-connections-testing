@@ -12,5 +12,5 @@ endpoints:
       schemaFilePath: openapi.yaml
 dependencies:
     connectionReferences:
-    - name: connpubtestconfig
-      resourceRef: service:/iasf/publishercomponent1-lx/v1/8b1c3/PUBLIC
+    - name: testproxyswagger
+      resourceRef: service:/databaseconnectionsdemo/swagger-petstore-proxy2/v1/proxy/PUBLIC
