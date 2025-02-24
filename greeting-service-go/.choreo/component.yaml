@@ -10,3 +10,7 @@ endpoints:
         - Project
         - Public
       schemaFilePath: openapi.yaml
+dependencies:
+    connectionReferences:
+    - name: connpubtestconfig
+      resourceRef: service:/iasf/publishercomponent1-lx/v1/8b1c3/PUBLIC
