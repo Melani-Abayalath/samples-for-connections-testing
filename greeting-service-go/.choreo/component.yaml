@@ -32,4 +32,6 @@ dependencies:
     connectionReferences:
     - name: Tetd
       resourceRef: service:/testprojecthansi/publishernew/v1/8b1c3/PUBLIC
+    - name: teyeyey
+      resourceRef: service:/testprojecthansi/publishernew/v1/8b1c3/PUBLIC
       
