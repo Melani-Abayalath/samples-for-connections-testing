@@ -30,5 +30,6 @@ endpoints:
     schemaFilePath: openapi.yaml
 dependencies:
     connectionReferences:
-    - name: teyeyey
+    - name: Tetd
       resourceRef: service:/testprojecthansi/publishernew/v1/8b1c3/PUBLIC
+      
