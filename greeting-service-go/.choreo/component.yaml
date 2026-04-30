@@ -12,5 +12,5 @@ endpoints:
     schemaFilePath: openapi.yaml
 dependencies:
   connectionReferences:
-    - name: HelloCon
+    - name: project-levl-ballerina-greeting-con
       resourceRef: service:/cjxx/greeting-service-qr/v1/8b1c3/PUBLIC
