@@ -54,6 +54,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 	tokenURL     := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_TOKENURL")
 	clientID     := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_CONSUMERKEY")
 	clientSecret := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_CONSUMERSECRET")
+	choreoapikey = os:getEnv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_CHOREOAPIKEY");
 
 	fmt.Printf("serviceURL: %s\n", serviceURL)
 	fmt.Printf("Client ID: %s\n", clientID)
