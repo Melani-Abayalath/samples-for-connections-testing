@@ -12,5 +12,5 @@ endpoints:
     schemaFilePath: openapi.yaml
 dependencies:
     connectionReferences:
-    - name: conntest
-      resourceRef: service:/melani/conntesst/v1/8b1c3/PUBLIC
+    - name: HelloCon
+      resourceRef: service:/cjxx/greeting-service-qr/v1/8b1c3/PUBLIC
