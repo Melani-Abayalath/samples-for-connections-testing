@@ -10,7 +10,7 @@ endpoints:
       - Project
       - Public
     schemaFilePath: openapi.yaml
-  dependencies:
-    connectionReferences:
+dependencies:
+  connectionReferences:
     - name: HelloCon
       resourceRef: service:/cjxx/greeting-service-qr/v1/8b1c3/PUBLIC
