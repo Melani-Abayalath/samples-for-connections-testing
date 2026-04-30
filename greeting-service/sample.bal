@@ -28,7 +28,7 @@ service / on new http:Listener(8090) {
     resource function get health() returns json {
         return {
             status: "UP",
-            service: "http-api"
+            'service: "http-api"
         };
     }
 }
