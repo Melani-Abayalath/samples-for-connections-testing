@@ -50,10 +50,10 @@ func main() {
 
 func greet(w http.ResponseWriter, r *http.Request) {
 	// Choreo injects these at deploy time based on the project-level connection in component.yaml
-	serviceURL   := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_SERVICEURL") + "/greeting"
-	tokenURL     := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_TOKENURL")
-	clientID     := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_CONSUMERKEY")
-	clientSecret := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_GREETING_CON_CONSUMERSECRET")
+	serviceURL   := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_SERVICEURL") + "/greeting"
+	tokenURL     := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_TOKENURL")
+	clientID     := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_CONSUMERKEY")
+	clientSecret := os.Getenv("CHOREO_PROJECT_LEVL_BALLERINA_CONSUMERSECRET")
 
 	fmt.Printf("serviceURL: %s\n", serviceURL)
 	fmt.Printf("Client ID: %s\n", clientID)
